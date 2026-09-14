@@ -30,7 +30,7 @@
         {
             Combo = new ComboBox();
             picbox = new PictureBox();
-            label1 = new Label();
+            lbDescripcion = new Label();
             link = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)picbox).BeginInit();
             SuspendLayout();
@@ -52,15 +52,15 @@
             picbox.TabIndex = 1;
             picbox.TabStop = false;
             // 
-            // label1
+            // lbDescripcion
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(321, 81);
-            label1.Name = "label1";
-            label1.Size = new Size(45, 19);
-            label1.TabIndex = 2;
-            label1.Text = "label1";
+            lbDescripcion.AutoSize = true;
+            lbDescripcion.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbDescripcion.Location = new Point(321, 81);
+            lbDescripcion.Name = "lbDescripcion";
+            lbDescripcion.Size = new Size(45, 19);
+            lbDescripcion.TabIndex = 2;
+            lbDescripcion.Text = "label1";
             // 
             // link
             // 
@@ -72,6 +72,7 @@
             link.TabIndex = 3;
             link.TabStop = true;
             link.Text = "linkLabel1";
+            link.LinkClicked += link_LinkClicked;
             // 
             // Form1
             // 
@@ -79,7 +80,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(601, 450);
             Controls.Add(link);
-            Controls.Add(label1);
+            Controls.Add(lbDescripcion);
             Controls.Add(picbox);
             Controls.Add(Combo);
             Name = "Form1";
@@ -94,7 +95,7 @@
 
         private ComboBox Combo;
         private PictureBox picbox;
-        private Label label1;
+        private Label lbDescripcion;
         private LinkLabel link;
     }
 }
